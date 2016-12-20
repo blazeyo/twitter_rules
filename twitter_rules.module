@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains twitter_rules.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twitter_rules_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the twitter_rules module.
+    case 'help.page.twitter_rules':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integrates twitter api with rules.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

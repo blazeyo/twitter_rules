@@ -1,0 +1,8 @@
+name: Twitter Rules Test
+type: module
+description: Module used by twitter rules kernel tests.
+core: 8.x
+package: Custom
+dependencies:
+  - twitter_rules
+  - comment

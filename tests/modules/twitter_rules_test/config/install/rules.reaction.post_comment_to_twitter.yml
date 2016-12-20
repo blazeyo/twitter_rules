@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies: {  }
+id: post_comment_to_twitter
+label: 'Post comment to twitter'
+events:
+  -
+    event_name: 'rules_entity_insert:comment'
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  conditions:
+    id: rules_and
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    actions:
+      -
+        id: rules_action
+        context_values: {  }
+        context_mapping:
+          message: comment.subject.value
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_tweet

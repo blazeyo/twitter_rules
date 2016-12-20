@@ -1,0 +1,16 @@
+{
+  "name": "drupal/twitter_rules",
+  "type": "drupal-module",
+  "description": "Integrates twitter api with rules.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/twitter_rules",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/twitter_rules",
+    "source": "http://cgit.drupalcode.org/twitter_rules"
+  },
+  "require": {
+    "dg/twitter-php": "*"
+  }
+}

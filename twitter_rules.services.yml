@@ -1,0 +1,5 @@
+services:
+  twitter_rules.connector:
+    class: Drupal\twitter_rules\TwitterConnector
+    arguments: ['@config.factory']
+

@@ -1,0 +1,7 @@
+name: Twitter rules
+type: module
+description: Integrates twitter api with rules.
+core: 8.x
+package: Custom
+dependencies:
+  - rules
